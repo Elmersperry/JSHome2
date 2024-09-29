@@ -5,7 +5,15 @@ let car = {
   speed: "140 km/h",
 };
 
+car.Spec = function(){
 alert(JSON.stringify(car));
+}
+
+window.onload = () => {
+let buttonSpec = document.getElementById("spec1").value;
+buttonSpec.addEventListener(click, Spec);
+}
+
 
 function STime() {
   const v = 140;
@@ -25,9 +33,11 @@ let newobject = {
   znam: Number(3),
 };
 
-function Plus() {
-  alert(chis + znam);
+neweobject.Plus = function() {
+  alert("chis + znam");
 }
+
+neweobject.Plus();
 
 window.onload = () => {
   let buttonPlus = document.getElementById("p1").value;
